@@ -18,7 +18,7 @@ function ContactForm() {
 
   // * Authenticate user
 
-  const authenticateUser = async () => {
+  const authenticateUser = async values => {
     try {
       contactContext.addContact(values);
     } catch (err) {
